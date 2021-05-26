@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no, viewport-fit=cover"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+        font-size: 30px;
+      }
+      .icon-search {
+        font-size: 26px;
+      }
+      .icon-shop {
+        font-size: 36px;
+      }
+      .icon_pull_down {
+        font-size: 20px;
+      }
+      .icon-close{
+        font-size: 24px;
+        position: absolute;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <svg class="icon icon-memu">
+          <use xlink:href="#icon-menu"></use>
+        </svg>
+        <svg class="icon icon-search">
+          <use xlink:href="#icon-search1"></use>
+        </svg>
+        <!-- <span>BELLERIS</span> -->
+        <div class="text">BELLERIS</div>
+        <svg class="icon icon-memu">
+          <use xlink:href="#icon-gerenzhongxin"></use>
+        </svg>
+        <svg class="icon icon-shop">
+          <use xlink:href="#icon-gouwudai"></use>
+        </svg>
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <h2>Ms coat</h2>
+      </div>
+
+      <div class="table">
+        <ul class="table-wrapper">
+          <li class="table-item" onclick="show()">
+            Best Match
+            <svg class="icon icon_pull_down">
+              <use xlink:href="#icon-pull_down"></use>
+            </svg>
+          </li>
+          <li class="table-item">315 resylts</li>
+        </ul>
+      </div>
+      <div class="content">
+          <ul class="content-wrapper">
+              <li>
+                  <img src="./img/clothes1.png" alt="">
+                  <p class="title">Product Title</p>
+                  <p class="money">$256 <span>$667</span></p>
+              </li>
+              <li>
+                <img src="./img/clothes2.png" alt="">
+                <p class="title">Product Title</p>
+                <p class="money">$256 <span>$667</span></p>
+            </li>
+            <li>
+                <img src="./img/clothes3.png" alt="">
+                <p class="title">Product Title</p>
+                <!-- <p class="money">$256 <span>$667</span></p> -->
+            </li>
+            <li>
+                <img src="./img/clothes4.png" alt="">
+                <p class="title">Product Title</p>
+                <!-- <p class="money">$256 <span>$667</span></p> -->
+            </li>
+          </ul>
+          <div class="pop-up">
+             <div class="hide"></div>
+             <div class="list">
+              <ul>
+                <li>
+                  <span onclick="hide()">
+                    <svg class="icon icon-close">
+                      <use xlink:href="#icon-X"></use>
+                    </svg>   
+                  </span>     
+                  Sort
+                </li>
+                <li>Best Match</li>
+                <li>Newest</li>
+                <li>Price - Low To High</li>
+                <li>Price - Hight To Low</li>
+                <li></li>
+              </ul>
+             </div>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>
+<script src="main.js"></script>
+<script src="//at.alicdn.com/t/font_2570805_qo1c4hggslr.js"></script>
